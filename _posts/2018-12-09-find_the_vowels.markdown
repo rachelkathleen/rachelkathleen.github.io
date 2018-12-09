@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "Find the Vowels"
-date:       2018-12-09 05:42:44 +0000
+date:       2018-12-09 00:42:45 -0500
 permalink:  find_the_vowels
 ---
 
 
-It's a Saturday night - and what else would a newbie coding student be doing other than working on problems in Codewars?
+It's a Saturday night - what else would a newbie coding student be doing other than working on problems in Codewars?
 
 Codewars is my preferred practice resource for a few reasons – chiefly because once a kata is solved, I get to see other, often more elegant ways to solve the problem.  Working through various kata has introduced me to a number a cool methods and bits of code – `reduce` and `inject` are recent favorites.
 
