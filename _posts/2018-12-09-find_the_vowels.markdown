@@ -38,7 +38,7 @@ def vowel_indices(word)
 end
 ```
 
-I had a bit of a think (and a few fruitless searches for a simple method to identify vowels in a string) and went back to a blog post on Regexp. Regular expression still feels like Greek - but it was worth a go.  After refining, and refactoring this was my final solution:
+I had a bit of a think (and a few fruitless searches for a simple method to identify vowels in a string) and went back to a blog post I recently read on Regexp. Regular expressions still feel like Greek - but it was worth a go.  After refining, and refactoring this was my final solution:
 
 ```
 def vowel_indices(word)
