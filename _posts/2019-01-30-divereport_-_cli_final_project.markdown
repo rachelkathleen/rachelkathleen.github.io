@@ -10,7 +10,7 @@ The first big hurdle was finding a 'scrapeable' site.  After identifying a good 
 
 The site directory had had the four headings (and my four future classes) in one class – `.headings`. All of my future objects were in one class – `.sitemaplist`. 
 
-[img]https://i.imgur.com/Jv5PyJV.png?1[/img]
+![Imgur](https://i.imgur.com/Jv5PyJV.png?1)
 
 I forked a copy of this [Repl.it](https://repl.it/@jenn_leigh_hansen/ScraperChecker?language=ruby) to quickly figure out which indexes were animals, regions, countries and dive locations and wrote a method that would iterate over the entire array or nodesets that corresponded with `.css("ul.sitemaplist li a")`.
 
