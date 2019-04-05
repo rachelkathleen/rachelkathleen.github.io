@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Sinatra Portfolio Project Roundup"
-date:       2019-04-05 00:08:37 +0000
+date:       2019-04-04 20:08:38 -0400
 permalink:  sinatra_portfolio_project_roundup
 ---
 
@@ -36,20 +36,25 @@ class Park < ActiveRecord::Base
   has_many :notes
   has_many :user_parks
   has_many :users, through: :user_parks
-end```
+end
+```
+
 
 ```
 class User < ActiveRecord::Base
    has_many :notes
   has_many :user_parks
   has_many :parks, through: :user_parks
-end```
+end
+```
+
 
 ```
 class UserPark < ActiveRecord::Base
   belongs_to :user
   belongs_to :park
-end```
+end
+```
 
 In hindsight, that looks like a fairly straightforward and ‘easy’ bit of coding - but setting up the right relationships is the backbone of the ‘model’ part of the MVC application, and there’s several overlapping relationships. 
 
@@ -69,4 +74,4 @@ Building out the controllers was the core of the project - and having a clear ma
 
 I started building views in tandem with controllers - I needed forms to test the routes for ‘new’, ‘edit’ and ‘delete’. Using HTML & CSS to build and style the pages in a way that way functional, aesthetically pleasing and user friendly was almost a second project unto itself. I used [Materialize](https://materializecss.com/) and [Skeleton ](http://getskeleton.com/) so I wouldn’t have to build everything from scratch.  Looking back, one thing I would do differently is take more time to break down the different parts, and plan better - like I had done for the overall application, specifically for the ‘view’ component.
 
-View a short demo [here](https://drive.google.com/open?id=1AFNIKso2AJRAZatkG4qXT43FCqvKTZP6) - or use the app for yourself [here](parkfinder-sinatra-project.herokuapp.com).
+View a short demo [here](https://drive.google.com/open?id=1AFNIKso2AJRAZatkG4qXT43FCqvKTZP6) - or use the app for yourself [here](https://parkfinder-sinatra-project.herokuapp.com/).
