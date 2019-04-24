@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Rails - Nested forms in three steps"
+title:      "Rails - Nested Forms in Three Steps"
 date:       2019-04-24 00:43:00 -0400
 permalink:  rails_-_nested_forms_in_three_steps
 ---
