@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails - Nested forms in three steps"
-date:       2019-04-24 04:42:59 +0000
+date:       2019-04-24 00:43:00 -0400
 permalink:  rails_-_nested_forms_in_three_steps
 ---
 
@@ -65,14 +65,14 @@ The above form gives a the user the ability to select and owner from owners alre
 
 **Step 1 - Model**
 
-Add the `accepts_nested_attributes_for` method to the model that has the `has_many` relationship, in our example, Owners. This is a class method that defines an attribute writer for the specified association (dogs). You can read up on it [here](https://api.rubyonrails.org/classes/ActiveRecord/NestedAttributes/ClassMethods.html). 
+Add the `accepts_nested_attributes_for` method to the model that our main form is for, in our example, Dogs. This is a class method that defines an attribute writer for the specified association (owners). You can read up on it [here](https://api.rubyonrails.org/classes/ActiveRecord/NestedAttributes/ClassMethods.html). 
 
 Our Owner class now looks like this:
 
 ```
-class Owner < ActiveRecord::Base
- has_many :dogs
- accepts_nested_attributes_for :dogs
+class Dog < ActiveRecord::Base
+ belongs_to :owner
+ accepts_nested_attributes_for :owner
 end
 ```
 
@@ -139,7 +139,7 @@ class DogsController < ApplicationController
 
   def new
    @dog = Dog.new
-   @dog.owner.build 
+   @dog.build_owner 
   end
 
  end
