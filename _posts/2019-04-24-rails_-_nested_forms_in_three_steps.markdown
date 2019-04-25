@@ -147,13 +147,13 @@ class DogsController < ApplicationController
  
 **Step 3b - Controller**
  
- We'll also need to update our strong parameters in the controller.  Using `accepts_nested_attributes_for` in the Owner model added a new attribute to the class.
+ We'll also need to update our strong parameters in the controller.  Using `accepts_nested_attributes_for` in the Dog model added a new attribute to the class.
  
  ```
 class DogsController < ApplicationController
 
   def  dog_params
-    params.require(:dog.permit(:name, :breed, :age owner_attributes: [:name])
+    params.require(:dog).permit(:name, :breed, :age owner_attributes: [:name])
   end
 	
 end
