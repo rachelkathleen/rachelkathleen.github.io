@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails Project Roundup - Scope Methods & Refactoring"
-date:       2019-06-05 03:44:41 +0000
+date:       2019-06-04 23:44:42 -0400
 permalink:  rails_project_roundup_-_scope_methods_and_refactoring
 ---
 
@@ -10,7 +10,7 @@ permalink:  rails_project_roundup_-_scope_methods_and_refactoring
 
 Building scope methods was one of the more challenging (and more rewarding) aspects of building my rails project. 
 
-The first one was straightforward - in the form to create a new wine, users could mark a wine as 'favorite'. The goal was the query the database using Active Record query interface and return an array of favorite wines. The `where` method was the best fit, since I wanted to return multiple objects.
+The first one was straightforward - in the form to create a new wine, users could mark a wine as 'favorite'. The goal was to query the database using Active Record query interface and return an array of favorite wines. The `where` method was the best fit, since I wanted to return multiple objects.
 
   `scope :is_favorite, -> {where(favorite: true)}`
 	
@@ -37,7 +37,7 @@ Still, I wanted to be able to sort wines by type to provide insights to the user
   scope :white, -> {where(wine_type: "White")}	  
   scope :rose, -> {where(wine_type: "Rose")}	
   scope :sweet, -> {where(wine_type: "Sweet")}	  
-  scope :sparkling, -> {where(wine_type: "Spakling")}	 
+  scope :sparkling, -> {where(wine_type: "Sparkling")}	 
   scope :other, -> {where(wine_type: "other")}	  
 ```
 
