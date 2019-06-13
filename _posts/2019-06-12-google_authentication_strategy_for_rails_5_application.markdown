@@ -56,11 +56,6 @@ end
     request.env['omniauth.auth']
   end
 ```
-```
-GOOGLE_CLIENT_ID=Your client id
-GOOGLE_CLIENT_SECRET=Your client secret
-```
- 
 8. **Add login/signup links.** You’ll need to add this link anyplace you want a user to be able to log in or sign up. It can be styled as a button or not, and does not need to be inside a form.
 `<%= link_to "Log In with Google", '/auth/google_oauth2' %>` 
 
