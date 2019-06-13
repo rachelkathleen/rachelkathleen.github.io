@@ -43,7 +43,7 @@ end
 
 7. **Add methods to sessions controller.** You’ll need two methods in the sessions controller - one to create (or log in) a user via Google, and a private method to request the auth hash.  
 ```
-  def omniauth
+def omniauth
     @user = User.from_omniauth(auth)
     @user.save
     session[:user_id] = @user.id
