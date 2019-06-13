@@ -41,7 +41,7 @@ end
   end
 ```
 
-7. **Add methods to sessions controller.** You’ll need two methods in the sessions controller - one to create (or log in) a user via Google, and a private method to request the auth hash.
+7. **Add methods to sessions controller.** You’ll need two methods in the sessions controller - one to create (or log in) a user via Google, and a private method to request the auth hash.  
 ```
   def omniauth
     @user = User.from_omniauth(auth)
@@ -56,6 +56,7 @@ end
     request.env['omniauth.auth']
   end
 ```
+
  
 8. **Add login/signup links.** You’ll need to add this link anyplace you want a user to be able to log in or sign up. It can be styled as a button or not, and does not need to be inside a form.
 `<%= link_to "Log In with Google", '/auth/google_oauth2' %>` 
