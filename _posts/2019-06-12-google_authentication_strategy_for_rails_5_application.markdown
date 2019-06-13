@@ -15,6 +15,8 @@ Here you'll be able to see the client ID and client secret - you'll need those s
 
 Add in the authorized redirect URIs - http://localhost:3000/auth/google_oauth2/callback works for testing in the rails server, but remember to add the URI for the production well.
 
+![](http://imgur.com/a/pfPrRHt)
+
 **Add necessary gems to your gem file.**  You'll need to add three gems - `gem 'omniauth'`, `gem 'dotenv-rails'` and `gem 'omniauth-google-oauth2'`. Run `bundle` in the terminal.
 
 **Create a .env file in the root directory of your app.** Add the following code to the file - and remeber to add this file to your gitignore. 
