@@ -56,6 +56,7 @@ end
     request.env['omniauth.auth']
   end
 ```
+
 8. **Add login/signup links.** You’ll need to add this link anyplace you want a user to be able to log in or sign up. It can be styled as a button or not, and does not need to be inside a form.
 `<%= link_to "Log In with Google", '/auth/google_oauth2' %>` 
 
