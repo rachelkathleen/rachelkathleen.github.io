@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Google Authentication Strategy for Rails 5 Application"
-date:       2019-06-13 02:37:45 +0000
+date:       2019-06-12 22:37:45 -0400
 permalink:  google_authentication_strategy_for_rails_5_application
 ---
 
@@ -58,6 +58,7 @@ end
     request.env['omniauth.auth']
   end
 ```
+
  
 8. **Add login/signup links.** You’ll need to add this link anyplace you want a user to be able to log in or sign up. It can be styled as a button or not, and does not need to be inside a form.
 `<%= link_to "Log In with Google", '/auth/google_oauth2' %`> 
