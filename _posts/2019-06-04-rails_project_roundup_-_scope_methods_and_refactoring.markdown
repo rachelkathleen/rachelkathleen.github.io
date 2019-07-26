@@ -6,6 +6,8 @@ permalink:  rails_project_roundup_-_scope_methods_and_refactoring
 ---
 
 
+![](https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg)
+
 [WINELOG](http://wine-log.herokuapp.com)
 
 Building scope methods was one of the more challenging (and more rewarding) aspects of building my rails project. 
