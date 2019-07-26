@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Rails Project Roundup - Scope Methods & Refactoring"
+title:      "Rails Project Roundup - Scope Methods, Metaprogramming & Refactoring"
 date:       2019-06-04 23:44:42 -0400
 permalink:  rails_project_roundup_-_scope_methods_and_refactoring
 ---
@@ -41,7 +41,7 @@ Still, I wanted to be able to sort wines by type to provide insights to the user
   scope :other, -> {where(wine_type: "other")}	  
 ```
 
-Now, I could call `.red` and return all red wines!
+Now, I could call `.red` and return all red wines! 
 
 The first version of the `top_rated` class method was:
 
@@ -101,6 +101,18 @@ Instead of:
 ```
 <%= f.label :wine_type, "Type:" %>
 <%= f.select :wine_type, options_for_select(["Red", "White", "Rose", "Sparking", "Sweet", "Other"], selected: @wine.wine_type) %>
+```
+
+The scope methods for being able to filter by wine type are functional but inelegant and not scalable. What if I wanted to create more options? Six lines of code could grow quickly and become un-DRY and unwieldy. I was able to refactor once again, using [the singleton class method](http://https://apidock.com/ruby/Object/singleton_class). The singleton class is a form of metaprogramming - allowing for greater flexibility. It's called inside the class - but not as a method, as it is defining a method itself.  The implementation used for my app is below. 
+
+```
+  self.singleton_class.class_eval do
+    WINE_TYPES.each do |wine_type|
+      define_method(wine_type.downcase.to_sym) do
+        where(wine_type: wine_type)
+      end
+    end
+  end
 ```
 
 Refactoring was a multistep process that made my code easier to understand, less complex, and made it easier for me to add on additional methods.
