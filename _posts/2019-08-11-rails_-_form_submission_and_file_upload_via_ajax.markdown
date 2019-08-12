@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails - Form Submission and File Upload via AJAX"
-date:       2019-08-12 01:59:25 +0000
+date:       2019-08-11 21:59:27 -0400
 permalink:  rails_-_form_submission_and_file_upload_via_ajax
 ---
 
