@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails - Serializing Active Storage uploads with Active Model"
-date:       2019-08-12 01:19:50 +0000
+date:       2019-08-11 21:19:51 -0400
 permalink:  rails_-_serializing_active_storage_uploads_with_active_model
 ---
 
@@ -66,4 +66,6 @@ end
 
 You can read up on `service_url` and `rails_blob_path` in the [rails docs](https://api.rubyonrails.org/classes/ActiveStorage/Blob.htm) to figure out which is better suited for your use case.
 
+Read part 2 on uploading files via AJAX [here](https://rachelkathleen.github.io/rails_-_form_submission_and_file_upload_via_ajax
+).
 
