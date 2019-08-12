@@ -7,7 +7,7 @@ permalink:  rails_-_serializing_active_storage_uploads_with_active_model
 
 
 
-The fourth project for the [Flatiron School's ](https://flatironschool.com/)software engineering program was to update our previous rails project with javascript featyres. 
+The fourth project for the [Flatiron School's ](https://flatironschool.com/)software engineering program was to update our previous rails project with javascript features. 
 
 My rails project enables users to upload an image. I used [Active Storage](https://edgeguides.rubyonrails.org/active_storage_overview.html) to handle the file upload, and Google Cloud Storage to store images. I won't detail that process - there's already a recent and well written[ blog](https://medium.com/@pjbelo/setting-up-rails-5-2-active-storage-using-google-cloud-storage-and-heroku-23df91e830f8) on the topic that also outlines how to deploy to Heroku.
 
@@ -33,8 +33,7 @@ class WineSerializer < ActiveModel::Serializer
   belongs_to :varietal
   belongs_to :country
 
-end
-```
+end```
 
 The last step is adding the Rails URL helpers, and creating a method to make the image an attribute.
 
@@ -53,16 +52,14 @@ class WineSerializer < ActiveModel::Serializer
   def picture
     rails_blob_path(object.picture, disposition: "attachment", only_path: true) if object.picture.attached?
   end
-end
-```
+end```
 
-There are different ways to create the picture method depending on how your app is set up, and what type of file is uploaded. An alternal if that doesn't work is:
+There are different ways to create the picture method depending on how your app is set up, and what type of file is uploaded. An alternative if that doesn't work is:
 
 ```
 def picture
   object.picture.service_url if object.picture.attached?
-end
-```
+end```
 
 You can read up on `service_url` and `rails_blob_path` in the [rails docs](https://api.rubyonrails.org/classes/ActiveStorage/Blob.htm) to figure out which is better suited for your use case.
 
