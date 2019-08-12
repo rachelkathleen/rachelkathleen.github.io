@@ -11,7 +11,7 @@ The fourth project for the [Flatiron School's ](https://flatironschool.com/)soft
 
 My rails project enables users to upload an image. I used [Active Storage](https://edgeguides.rubyonrails.org/active_storage_overview.html) to handle the file upload, and Google Cloud Storage to store images. I won't detail that process - there's already a recent and well written[ blog](https://medium.com/@pjbelo/setting-up-rails-5-2-active-storage-using-google-cloud-storage-and-heroku-23df91e830f8) on the topic that also outlines how to deploy to Heroku.
 
-Here, I'll tackle how to serialize files uploaded with Active Storage to JSON, and how to upload the files via an AJAX request.
+Here, I'll tackle how to serialize files uploaded with Active Storage to JSON, and then how to upload the files via an AJAX request.
 
 The first piece is relatively straightforward. I used [Active Model](https://guides.rubyonrails.org/active_model_basics.html) to serialize data. `rails g wine serializer` generates a directory for serializers, and creates a serializer for the wine class.
 
