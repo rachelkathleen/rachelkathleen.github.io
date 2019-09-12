@@ -1,14 +1,14 @@
 ---
 layout: post
 title:      "Simple Async Search Bar with Javascript"
-date:       2019-09-12 04:44:45 +0000
+date:       2019-09-12 00:44:46 -0400
 permalink:  simple_async_search_bar_with_javascript
 ---
 
 
 
 
-<iframe src="https://share.getcloudapp.com/jkuJkq99?embed=true" width="575" height="400" style="border:none" frameborder="0" allowtransparency="true" allowfullscreen="true">              </iframe>
+<iframe src="https://share.getcloudapp.com/jkuJkq99?embed=true" width=90% style="border:none" frameborder="0" allowtransparency="true" allowfullscreen="false">              </iframe>
 
 This is a quick guide on how to set up a search bar. I'll be using a list of the 50 states, rendered as an unordered list as an example. However, you can use this same search for anything or any part of an application by changing the  variables and tags. 
 
