@@ -5,9 +5,10 @@ date:       2019-11-11 22:20:51 -0500
 permalink:  creating_a_reusable_like_button_component_with_react
 ---
 
-<iframe src="https://share.getcloudapp.com/eDuLKkYb?embed=true" width="575" height="400" style="border:none" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
 
 This is a step-by-step guide on how to create a component in react that can be used as a 'like' or counter button.
+
+<iframe src="https://share.getcloudapp.com/eDuLKkYb?embed=true" width="575" height="400" style="border:none" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
 
 *  Create a class component that renders a button:
 
