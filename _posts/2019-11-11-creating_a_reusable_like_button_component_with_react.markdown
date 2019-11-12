@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Creating a reusable 'Like Button' Component with React"
-date:       2019-11-12 03:20:50 +0000
+date:       2019-11-11 22:20:51 -0500
 permalink:  creating_a_reusable_like_button_component_with_react
 ---
 
@@ -50,7 +50,7 @@ addLike = () => {
 
 Update the button to have use the click handler: `return <button onClick={this.addLike}>Likes: {this.state.likes} </button>`
 
-*  If you are adding a button to multiple items - a gallery of photos, or a list of things, and want to count 'likes' for each individually follow this additional steps.
+*  If you are adding a button to multiple items - a gallery of photos, or a list of things, and want to count 'likes' for each individually follow these additional steps.
     *  Be sure each item in your index/gallery/list has a unique key in it's parent html element (div, li etc) - `key={item.id}`
     *  Pass that id in as a prop when you are rendering the button component - `<LikeButton itemId={item.id} /> `
     *  Add the id to the button - `<button onClick={this.addLike} id={this.props.itemId}>Likes: {this.state.likes} </button>`
