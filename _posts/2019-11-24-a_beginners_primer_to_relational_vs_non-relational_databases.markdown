@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "A Beginner's Primer to Relational vs. Non-Relational Databases"
-date:       2019-11-25 04:32:36 +0000
+date:       2019-11-24 23:32:38 -0500
 permalink:  a_beginners_primer_to_relational_vs_non-relational_databases
 ---
 
@@ -30,6 +30,6 @@ Non-relational databases are *document* oriented, meaning they store data in a s
 
 Non-relational databases offer greater flexibility than their relational counterparts because they don't require advance knowledge of the structure or type of data, and don't require records to be uniform in content. 
 
-This type of database works well when there is large amount of unstructured data, or if the needs aren't clear at the beginning of a project, or if created clearly defined schema proves overly complex. 
+This type of database works well when there is large amount of unstructured data, or if the needs aren't clear at the beginning of a project, or if creating a clearly defined schema proves overly complex. 
 
 
